@@ -4,8 +4,8 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Dr Séverine Williams, Formation linguistique et interculturelle de haut niveau | Anglais &amp; FLE</title>
-<meta content="Formation en anglais et en français langue étrangère à distance, par Séverine Williams, docteure de Harvard et agrégée d'anglais. Approche culturelle et interculturelle, programmes sur mesure : programme Très Haut Niveau pour cadres dirigeants, experts et diplomates, perfectionnement, concours, oraux, entretiens, pitch en anglais." name="description"/>
+<title>Dr Séverine Williams — Anglais, FLE et préparation aux concours, à distance</title>
+<meta content="Anglais et FLE à distance avec Séverine Williams, docteure de Harvard et agrégée d'anglais : préparation au CAPES, à l'agrégation et aux écoles de commerce, programmes pour cadres dirigeants." name="description"/>
 
 <meta content="Séverine Williams" name="author"/>
 <meta content="index, follow, max-snippet:-1, max-image-preview:large" name="robots"/>
@@ -14,7 +14,7 @@
 
 
 <meta content="Dr Séverine Williams — Formation linguistique et interculturelle de haut niveau" property="og:title"/>
-<meta content="Anglais et FLE à distance. Docteure de Harvard, agrégée d'anglais. Programmes sur mesure pour dirigeants, professionnels, chercheurs, grandes écoles et lycéens." property="og:description"/>
+<meta content="Anglais et FLE à distance. Docteure de Harvard, agrégée d'anglais. Programmes sur mesure pour dirigeants, professionnels, chercheurs et candidats adultes aux concours (CAPES, agrégation, écoles de commerce)." property="og:description"/>
 
 <meta content="summary_large_image" name="twitter:card"/>
 <meta content="#8C1728" name="theme-color"/>
@@ -129,7 +129,7 @@ nav.menu a:hover{border-bottom-color:var(--crimson)}
   text-decoration:none; border-bottom:2px solid transparent;
 }
 .more:hover{border-bottom-color:var(--crimson)}
-.more::after{content:" A"; font-weight:700}
+.more::after{content:" \203A"; font-weight:700}
 .crimson .more, .dark .more{color:#fff}
 .crimson .more:hover, .dark .more:hover{border-bottom-color:#fff}
 
@@ -189,8 +189,18 @@ section.dark .lead, section.crimson .lead{color:rgba(255,255,255,.82)}
 
 /* étiquettes */
 .tags{display:flex; flex-wrap:wrap; gap:.55rem; margin:0; padding:0; list-style:none}
+.duo{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; margin-top:2.25rem}
+.duo a{display:block; background:var(--paper); border-top:3px solid var(--crimson); padding:1.25rem 1.4rem; text-decoration:none; color:var(--body)}
+.duo a:hover h3{color:var(--crimson)}
+.duo p{color:var(--muted); font-size:.98rem; margin:0}
+@media (max-width:860px){ .duo{grid-template-columns:minmax(0,1fr)} }
 .tags li{font-size:.92rem; font-weight:500; color:var(--ink); background:var(--paper); border:1px solid var(--rule); padding:.55rem .9rem}
-section.band .tags li{background:var(--paper)}
+section.band .duo{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:1.5rem; margin-top:2.25rem}
+.duo a{display:block; background:var(--paper); border-top:3px solid var(--crimson); padding:1.25rem 1.4rem; text-decoration:none; color:var(--body)}
+.duo a:hover h3{color:var(--crimson)}
+.duo p{color:var(--muted); font-size:.98rem; margin:0}
+@media (max-width:860px){ .duo{grid-template-columns:minmax(0,1fr)} }
+.tags li{background:var(--paper)}
 
 /* étapes numérotées */
 .steps{list-style:none; counter-reset:s; padding:0; margin:0; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:2.5rem}
@@ -228,7 +238,7 @@ section.band .tags li{background:var(--paper)}
 }
 .plus > summary::-webkit-details-marker{display:none}
 .plus > summary::after{content:"+"; position:absolute; right:.2rem; top:1rem; font-size:1.2rem}
-.plus[open] > summary::after{content:"3"}
+.plus[open] > summary::after{content:"\2013"}
 .plus-body{padding-bottom:2rem}
 .sous-titre{font-family:var(--serif); font-size:1.5rem; color:var(--ink); margin:2.5rem 0 .75rem}
 .plus-body .sous-titre:first-child{margin-top:.5rem}
@@ -255,7 +265,7 @@ section.band .tags li{background:var(--paper)}
 .faq summary{cursor:pointer; list-style:none; position:relative; padding:1.2rem 2.5rem 1.2rem 0; font-family:var(--serif); font-size:1.28rem; color:var(--ink)}
 .faq summary::-webkit-details-marker{display:none}
 .faq summary::after{content:"+"; position:absolute; right:.3rem; top:1.15rem; font-family:var(--sans); font-size:1.25rem; color:var(--crimson)}
-.faq details[open] summary::after{content:"3"}
+.faq details[open] summary::after{content:"\2013"}
 .faq .rep{padding:0 0 1.4rem; color:var(--muted); max-width:62ch}
 
 /* contact */
@@ -287,7 +297,7 @@ footer h4{font-family:var(--sans); font-size:.74rem; font-weight:700; color:#fff
 .legal summary{cursor:pointer; list-style:none; position:relative; padding:.9rem 1.8rem .9rem 0; font-size:.86rem; font-weight:600; color:#fff}
 .legal summary::-webkit-details-marker{display:none}
 .legal summary::after{content:"+"; position:absolute; right:.2rem; color:var(--crimson); font-size:1.05rem}
-.legal details[open] summary::after{content:"3"}
+.legal details[open] summary::after{content:"\2013"}
 .legal .txt{font-size:.82rem; line-height:1.7; color:var(--on-dark-2); padding-bottom:1.6rem; max-width:64ch}
 .legal .txt h4{font-size:.8rem; letter-spacing:0; text-transform:none; margin:1.2rem 0 .35rem; font-family:var(--sans)}
 .legal .txt h4:first-child{margin-top:0}
@@ -560,8 +570,12 @@ Toutes les séances ont lieu en distanciel, individuellement ou en très petit g
 <li>Oraux et entretiens d’embauche</li>
 <li>Pitch en anglais</li>
 </ul>
+<div class="duo">
+<a href="/preparation-capes-agregation-anglais.html"><h3>Préparer le CAPES et l'agrégation d'anglais</h3><p>Externe, interne, agrégation spéciale pour les docteurs. Pour enseignants en poste et adultes en reconversion.</p></a>
+<a href="/anglais-concours-ecoles-de-commerce.html"><h3>L'anglais des concours d'écoles de commerce</h3><p>Admissions parallèles, MSc, MBA, Executive : épreuves, tests et entretiens en anglais.</p></a>
+</div>
 <p class="ligne">
-Pour entrepreneurs et dirigeants, professionnels, universitaires et chercheurs, candidats aux grandes écoles et lycéens. <a href="#faq">Questions fréquentes</a>
+Pour entrepreneurs et dirigeants, professionnels, universitaires et chercheurs, enseignants et candidats adultes aux concours. <a href="/faq.html">Questions fréquentes</a>
 
 </p>
 </div>
@@ -933,8 +947,7 @@ Bourses de recherche<em>Bourse doctorale complète de Harvard, bourse d’échan
 </a>
 </li>
 <li>
-<a href="https://www.instagram.com/reel/DZDaTFVgZoX/",
-        "https://www.facebook.com/valeriepereztv/videos/-signature-à-marrakech-la-signature-de-destins-de-femmes-à-la-librairie-booklore/1283736417079889/" rel="noopener" target="_blank">
+<a href="https://www.instagram.com/reel/DZDaTFVgZoX/" rel="noopener" target="_blank">
 <span class="t">Événement culturel bilingue, Marrakech</span>
 <span class="u">instagram.com</span>
 </a>
@@ -1008,6 +1021,8 @@ Expliquez en quelques lignes quels sont vos objectifs et quelles sont vos éché
 <li><a href="#offre">Toutes les formations</a></li>
 <li><a href="#Excellence">Excellence</a></li>
 <li><a href="#methode">Méthode et tarifs</a></li>
+<li><a href="/preparation-capes-agregation-anglais.html">CAPES et agrégation d'anglais</a></li>
+<li><a href="/anglais-concours-ecoles-de-commerce.html">Anglais pour les écoles de commerce</a></li>
 </ul>
 </div>
 <div>
@@ -1157,6 +1172,7 @@ L'ensemble des contenus de ce site (textes, images, identité visuelle, supports
         "Français langue étrangère",
         "Communication interculturelle",
         "Préparation aux concours de l'enseignement (CAPES, agrégation)",
+        "Préparation à l'anglais des concours d'écoles de commerce",
         "Préparation aux oraux et entretiens en anglais",
         "Prise de parole et pitch en anglais",
         "Littérature française et comparée",
@@ -1242,7 +1258,8 @@ L'ensemble des contenus de ce site (textes, images, identité visuelle, supports
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Remise à niveau en anglais"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Perfectionnement et travail du registre, de l'idiomatisme et de l'accent"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Coaching linguistique individuel"}},
-          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Préparation aux concours de haut niveau (CAPES, agrégation, grandes écoles)"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Préparation au CAPES et à l'agrégation d'anglais (externe, interne, spéciale)","url":"https://www.severinewilliams.com/preparation-capes-agregation-anglais.html"}},
+          {"@type":"Offer","itemOffered":{"@type":"Service","name":"Anglais pour les concours d'écoles de commerce : admissions parallèles, MSc, MBA, Executive","url":"https://www.severinewilliams.com/anglais-concours-ecoles-de-commerce.html"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Préparation aux oraux et aux entretiens d'embauche en anglais"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Préparation aux pitchs en anglais de haut niveau"}},
           {"@type":"Offer","itemOffered":{"@type":"Service","name":"Programme Très Haut Niveau, Executive Speaking & Leadership","description":"Prise de parole en public, conduite de réunion, gestion des objections en conseil d'administration, art du pitch."}},
@@ -1256,8 +1273,8 @@ L'ensemble des contenus de ce site (textes, images, identité visuelle, supports
         {"@type":"Audience","audienceType":"Entrepreneurs et dirigeants"},
         {"@type":"Audience","audienceType":"Professionnels"},
         {"@type":"Audience","audienceType":"Universitaires et chercheurs"},
-        {"@type":"Audience","audienceType":"Candidats aux grandes écoles"},
-        {"@type":"Audience","audienceType":"Lycéens"}
+        {"@type":"Audience","audienceType":"Enseignants et candidats adultes aux concours de l'enseignement (CAPES, agrégation)"},
+        {"@type":"Audience","audienceType":"Candidats adultes aux écoles de commerce (admissions parallèles, MSc, MBA, Executive)"}
       ]
     },
     {
@@ -1276,7 +1293,7 @@ L'ensemble des contenus de ce site (textes, images, identité visuelle, supports
         {"@type":"Question","name":"Quelles langues sont enseignées ?","acceptedAnswer":{"@type":"Answer","text":"L'anglais, britannique et américain, et le français langue étrangère. Les séances peuvent se dérouler en français ou en anglais selon l'objectif visé."}},
         {"@type":"Question","name":"Combien coûte une formation ?","acceptedAnswer":{"@type":"Answer","text":"Les tarifs sont établis sur mesure, après un entretien de diagnostic gratuit de trente minutes. Ils dépendent du format, de la fréquence et du volume total. Un devis écrit est remis avant la première séance."}},
         {"@type":"Question","name":"À partir de quel niveau peut-on commencer ?","acceptedAnswer":{"@type":"Answer","text":"De la remise à niveau au perfectionnement le plus exigeant. Le travail est particulièrement adapté aux personnes qui ont déjà un bon niveau et qui butent sur le dernier écart, celui des usages culturels et du naturel."}},
-        {"@type":"Question","name":"Quels concours et examens peuvent être préparés ?","acceptedAnswer":{"@type":"Answer","text":"Les concours de l'enseignement (CAPES et agrégation d'anglais), les épreuves écrites et orales des concours des grandes écoles, les entretiens d'admission, ainsi que les entretiens d'embauche et les oraux professionnels en anglais."}},
+        {"@type":"Question","name":"Quels concours et examens peuvent être préparés ?","acceptedAnswer":{"@type":"Answer","text":"Les concours de l'enseignement (CAPES et agrégation d'anglais, externes, internes et agrégation spéciale pour les docteurs), l'anglais des concours d'écoles de commerce pour les adultes (admissions parallèles, MSc, MBA, programmes Executive), les tests TOEIC, TOEFL et IELTS, ainsi que les entretiens d'embauche et les oraux professionnels en anglais."}},
         {"@type":"Question","name":"Qu'est-ce que l'approche interculturelle change concrètement ?","acceptedAnswer":{"@type":"Answer","text":"On ne travaille pas seulement la langue, mais les attentes des interlocuteurs : le degré de directivité admis, la place de l'humour, la façon d'exprimer un désaccord, la construction d'un argument, ce qui se dit et ce qui se tait. C'est la différence entre être compris et être convaincant."}},
         {"@type":"Question","name":"En quoi consiste le programme « Très Haut Niveau » ?","acceptedAnswer":{"@type":"Answer","text":"C'est un cursus destiné aux cadres dirigeants, aux experts et aux diplomates, articulé autour de quatre modules avancés : Executive Speaking & Leadership (prise de parole, gestion des objections en conseil d'administration, art du pitch) ; négociation et diplomatie (maîtrise de l'understatement, décodage du second degré, techniques d'influence) ; rédaction stratégique (rapports financiers, contrats, notes blanches, communiqués de presse) ; réduction d'accent et posture (intonation, rythme, aisance culturelle). Ils sont combinés selon la fonction, les interlocuteurs et l'échéance."}},
         {"@type":"Question","name":"Qui est Séverine Williams ?","acceptedAnswer":{"@type":"Answer","text":"Docteure de l'université Harvard en langues et littératures romanes (2012) et agrégée d'anglais (2019, reçue 4e), elle a enseigné pendant vingt ans aux États-Unis, au Royaume-Uni, en France et au Maroc, notamment à Harvard, à Boston College, à l'Institut français de Londres, à la Sorbonne et au lycée Louis-le-Grand. Son parcours est vérifiable auprès de sources publiques."}}
